@@ -1,0 +1,24 @@
+[version]
+ver="6"
+[path]
+upload_dir="/var/www/upd"
+[license]
+user="EAV-0101020203"
+password="6p4nk37bsh"
+[logs]
+;=====================
+; log_type="db" - for logging in to mySQL
+; log_type="file" - for logging in to log-file
+;=====================
+log_type="file"
+;=====================
+log_db_host="127.0.0.1"
+log_db_user="root"
+log_db_password="secret"
+log_db_base="stats"
+log_db_table="eset_log"
+;=====================
+; if log_type="file"
+; path to log-file:
+;=====================
+log_file="geteset.log"
