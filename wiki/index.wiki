@@ -3,12 +3,11 @@
 No text
 
 
-= Requirement =
+= Minimal requirement =
 
-Minimal:
 
-* Valid ESET Antivirus license (username and password)
-* Samba of HTTP-shared directory
-* PHP 5 CLI
-* UnRAR
-* WGET
+*Valid ESET Antivirus license (username and password)
+*Samba of HTTP-shared directory
+*PHP 5 CLI
+*UnRAR
+*WGET
