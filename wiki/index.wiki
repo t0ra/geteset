@@ -1,3 +1,5 @@
 #summary Welcome page
 
 Welcome to GetESET`s wiki page.
+
+[Requirement]
