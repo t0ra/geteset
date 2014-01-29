@@ -3,9 +3,9 @@
 No text
 
 
-= Minimal requirement =
+= Requirement =
 
-
+This is needed:
 * Valid ESET Antivirus license (username and password)
 * Samba of HTTP-shared directory
 * PHP 5 CLI
