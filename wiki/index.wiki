@@ -2,4 +2,6 @@
 
 Welcome to GetESET`s wiki page.
 
-[Requirement]
+For reading requirements go to [Requirement] page.
+
+Deploying guide you can see in [Deploy] page.
