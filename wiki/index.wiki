@@ -1,1 +1,1 @@
-#labels Featured
+#labels Featured,Phase-Requirements,Phase-Deploy
