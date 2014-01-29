@@ -1,15 +1,1 @@
-
-= Introduction =
-
-No text
-
-
-= Requirement =
-
-This is needed:
-* Valid ESET Antivirus license (username and password)
-* Samba of HTTP-shared directory
-* PHP 5 CLI
-* UnRAR
-* WGET
-* BSD of Linux OS
+#labels Featured
