@@ -1,0 +1,16 @@
+#summary One-sentence summary of this page.
+#labels Phase-Requirements
+
+= Introduction =
+
+Add your content here.
+
+= Requirement =
+
+This is needed:
+   * BSD of Linux OS
+   * Valid ESET Antivirus license (username and password)
+   * Samba of HTTP-shared directory
+   * PHP 5 CLI
+   * UnRAR
+   * WGET
