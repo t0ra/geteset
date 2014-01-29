@@ -1,14 +1,12 @@
 #summary One-sentence summary of this page.
 #labels Phase-Deploy
 
-= Introduction =
+= Requirement =
 
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+This is needed:
+   * BSD of Linux OS
+   * Valid ESET Antivirus license (username and password)
+   * Samba of HTTP-shared directory
+   * PHP 5 CLI
+   * UnRAR
+   * WGET
