@@ -1,1 +1,3 @@
-#labels Featured,Phase-Requirements,Phase-Deploy
+#Welcome page
+
+Welcome to GetESET`s wiki page.
