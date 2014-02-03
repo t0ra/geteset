@@ -2,7 +2,7 @@
 
 = Introduction =
 
-GetEset working fine in Linux and *BSD systems. Tested in FreeBSD, pfSense and Debian Linux.
+GetEset tested in FreeBSD, pfSense, Debian Linux and working fine.
 
 = Installation =
 
