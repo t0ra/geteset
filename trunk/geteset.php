@@ -51,7 +51,6 @@ mysqli_query($con,"INSERT INTO ".$settings['log_db_table']." (`date`, `sign`, `l
 
 passthru("/usr/".getostype()."bin/wget -c http://update.eset.com/eset_upd/v".$settings['ver']."/update.ver -O ".$tempeset."update.rar", $result);
 passthru("/usr/".getostype()."bin/unrar e -y ".$tempeset."update.rar ".$tempeset, $result);
-passthru("/bin/rm ".$settings['upload_dir']."/*", $result);
 $upfile = file_get_contents($tempeset.'update.ver');
 
 
@@ -96,6 +95,7 @@ if( $settings['signver'] == end($idarr)){
         tolog($msg,$sign);
         return 0;
 }
+passthru("/bin/rm ".$settings['upload_dir']."/*", $result);
 $numfiles = count($updfiles);
 for ($k=1;$k<$numfiles;$k++){
                 getfilefromweb($updfiles[$k]);
