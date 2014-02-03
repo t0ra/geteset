@@ -22,3 +22,8 @@ log_db_table="eset_log"
 ; path to log-file:
 ;=====================
 log_file="geteset.log"
+; --------------------
+; DON`T touch this:
+;---------------------
+[signature]
+signver=""
