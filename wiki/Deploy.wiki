@@ -43,4 +43,5 @@ for psSense:
 {{{
 /usr/sbin/pkg_add -r wget
 /usr/sbin/pkg_add -r unrar
+rehash
 }}}
