@@ -12,5 +12,5 @@ This is needed:
    * Valid ESET Antivirus license (username and password)
    * Samba of HTTP-shared directory
    * PHP 5 CLI
-   * UnRAR (or unrar-free for Linux OS)
+   * UnRAR (or "unrar-free" for Linux OS)
    * WGET
