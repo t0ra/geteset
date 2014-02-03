@@ -3,6 +3,7 @@
 $settings = parse_ini_file("settings.txt");
 
 $tempeset = "/var/eset/";
+$msg = "";
 
 if (!is_dir($settings['upload_dir'])){
         mkdir($settings['upload_dir']);
