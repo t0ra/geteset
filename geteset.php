@@ -82,7 +82,7 @@ for ($j=0;$j<$lines;$j++){
         }
 
         preg_match('/versionid/i', $strngfile[$j], $result);
-        if($result[0] =="versionid"){
+        if(isset($result[0]) and $result[0] =="versionid"){
                 $idstr = preg_split('/versionid=/i', $strngfile[$j]);
                 $idarr[] = $idstr[1];
         }
