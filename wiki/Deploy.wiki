@@ -17,6 +17,12 @@ aptitude update
 aptitude install unrar-free
 }}}
 
+Install PHP5:
+
+{{{
+aptitude install php5
+ln -s /usr/bin/php5 /usr/local/bin/php
+}}}
 == FreeBSD/pfSense ==
 
 === Prepare ===
