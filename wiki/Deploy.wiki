@@ -20,6 +20,8 @@ aptitude install unrar-free
 
 == FreeBSD/pfSense ==
 
+=== Prepare ===
+
 Install Unrar:
 
 {{{
