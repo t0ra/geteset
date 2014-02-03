@@ -5,7 +5,21 @@
 Add your content here.
 
 
-= Details =
+= Installation =
+
+== Linux ==
+
+=== Prepare ===
+
+Install Unrar:
+
+{{{
+aptitude update
+aptitude install unrar-free
+}}}
+
+== FreeBSD/pfSense ==
+
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
