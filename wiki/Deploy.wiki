@@ -20,8 +20,13 @@ aptitude install unrar-free
 
 == FreeBSD/pfSense ==
 
+Install Unrar:
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+{{{
+cd /usr/ports/archivers/unrar; make install clean
+}}}
+
+Install Wget:
+{{{
+cd /usr/ports/ftp/wget; make install clean
+}}
