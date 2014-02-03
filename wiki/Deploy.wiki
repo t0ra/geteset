@@ -2,7 +2,8 @@
 
 = Introduction =
 
-Add your content here.
+GetEset working fine in Linux and *BSD systems.
+Tested in FreeBSD, pfSense and Debian Linux.
 
 
 = Installation =
@@ -22,13 +23,20 @@ aptitude install unrar-free
 
 === Prepare ===
 
-Install Unrar:
+Install Unrar (for FreeBSD):
 
 {{{
 cd /usr/ports/archivers/unrar; make install clean
 }}}
 
-Install Wget:
+Install Wget (for FreeBSD):
 {{{
 cd /usr/ports/ftp/wget; make install clean
+}}}
+
+for psSense:
+
+{{{
+/usr/sbin/pkg_add -r wget
+/usr/sbin/pkg_add -r unrar
 }}}
