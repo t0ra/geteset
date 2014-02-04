@@ -172,3 +172,4 @@ $vfile = 'settings.txt';
 $verfile = file_get_contents($vfile);
 $verfile = preg_replace('/signver="\d*"/i', $cv, $verfile);
 file_put_contents($vfile, $verfile);
+?>
