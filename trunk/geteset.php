@@ -28,7 +28,7 @@ function getostype(){
 }
 
 function tolog($logmsg, $logsign){
-        global $settings;
+        global $settings,$tempeset;
         switch($settings['log_type'])
         {
                 case "file":
@@ -48,6 +48,8 @@ mysqli_query($con,"INSERT INTO ".$settings['log_db_table']." (`date`, `sign`, `l
         default:
 		         echo "";
         }
+        passthru("/bin/rm ".$tempeset."update.rar", $result);
+        passthru("/bin/rm ".$tempeset."update.ver", $result);
 }
 
 passthru("/usr/".getostype()."bin/wget -c http://update.eset.com/eset_upd/v".$settings['ver']."/update.ver -O ".$tempeset."update.rar", $result);
@@ -170,7 +172,3 @@ $vfile = 'settings.txt';
 $verfile = file_get_contents($vfile);
 $verfile = preg_replace('/signver="\d*"/i', $cv, $verfile);
 file_put_contents($vfile, $verfile);
-// ---
-passthru("/bin/rm ".$tempeset."update.rar", $result);
-passthru("/bin/rm ".$tempeset."update.ver", $result);
-echo "\nAll temp files is deleted...\n";
