@@ -23,9 +23,12 @@ for($p=0;$p<$cvarray;$p++){
                         mkdir($tempeset."v".$curver);
         }
     passthru("/bin/rm ".$tempeset."v".$curver."/update.rar" , $result);
-    passthru("/bin/rm ".$tempeset."v".$curver."/update.ver" , $result);
-		passthru("/usr/".getostype()."bin/wget -c http://update.eset.com/eset_upd/v".$curver."/update.ver -O ".$tempeset."v".$curver."/update.rar", $result);
-		passthru("/usr/".getostype()."bin/unrar e -y ".$tempeset."v".$curver."/update.rar ".$tempeset."v".$curver, $result);
+	passthru("/bin/rm ".$tempeset."v".$curver."/update.ver" , $result);
+	passthru("/usr/".getostype()."bin/wget -c http://update.eset.com/eset_upd/v".$curver."/update.ver -O ".$tempeset."v".$curver."/update.rar", $result);
+	passthru("/usr/".getostype()."bin/unrar e -y ".$tempeset."v".$curver."/update.rar ".$tempeset."v".$curver, $result);
+    if (!file_exists($tempeset."v".$curver."/update.ver")) {
+        return 0;
+    } else {
         $upfile = file_get_contents($tempeset.'v'.$curver.'/update.ver');
 
 
@@ -128,6 +131,7 @@ for($p=0;$p<$cvarray;$p++){
                         unset($msg);
 
         }
+    }   
 }
 $newsign = "";
 for($q=0;$q<count($sarray);$q++) {
