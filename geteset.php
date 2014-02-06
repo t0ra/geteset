@@ -22,7 +22,9 @@ for($p=0;$p<$cvarray;$p++){
         if (!is_dir($tempeset."v".$curver)){
                         mkdir($tempeset."v".$curver);
         }
-		passthru("/usr/".getostype()."bin/wget -N -c http://update.eset.com/eset_upd/v".$curver."/update.ver -O ".$tempeset."v".$curver."/update.rar", $result);
+    passthru("/bin/rm ".$tempeset."v".$curver."/update.rar" , $result);
+    passthru("/bin/rm ".$tempeset."v".$curver."/update.ver" , $result);
+		passthru("/usr/".getostype()."bin/wget -c http://update.eset.com/eset_upd/v".$curver."/update.ver -O ".$tempeset."v".$curver."/update.rar", $result);
 		passthru("/usr/".getostype()."bin/unrar e -y ".$tempeset."v".$curver."/update.rar ".$tempeset."v".$curver, $result);
         $upfile = file_get_contents($tempeset.'v'.$curver.'/update.ver');
 
