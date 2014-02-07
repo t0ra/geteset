@@ -120,10 +120,6 @@ for($p=0;$p<$cvarray;$p++){
                                         }
                                 file_put_contents($settings['upload_dir']."/v".$curver."/update.ver", $strfile[$l]."\n",FILE_APPEND);
                                 }
-                                for($q=0;$q<count($sarray);$q++) {
-                                        $newsign .= $sarray[$q].",";
-                                }
-
                                 $msg .= " New signature for V".$curver." is:".end($idarr);
                                 passthru("/bin/rm ".$tempeset."v".$curver."/update.rar", $result);
                                 passthru("/bin/rm ".$tempeset."v".$curver."/update.ver", $result);
