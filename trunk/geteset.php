@@ -157,7 +157,7 @@ function getfilefromweb($gf){
                }
         }
 function getostype(){
-        exec("/usr/bin/uname -o", $res);
+        exec("/usr/bin/uname", $res);
         preg_match('/BSD/i', $res[0], $ostype);
         if(isset($ostype[0])){
                 if($ostype[0] == "BSD"){
