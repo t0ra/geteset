@@ -75,7 +75,7 @@ for($p=0;$p<$cvarray;$p++){
         for ($k=1;$k<$numfiles;$k++){
                                         getfilefromweb($updfiles[$k]);
         }
-          if(isset($settings['upload_dir']."/v".$curver."/update.ver")){
+          if (is_file($settings['upload_dir']."/v".$curver."/update.ver")){
             passthru("/bin/rm ".$settings['upload_dir']."/v".$curver."/update.ver", $result);
           }        
         $getdir = scandir($settings['upload_dir']."/v".$curver);
