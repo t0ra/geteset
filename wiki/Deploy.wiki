@@ -22,6 +22,7 @@ Install PHP5:
 {{{
 aptitude install php5
 ln -s /usr/bin/php5 /usr/local/bin/php
+ln -s /bin/uname /usr/bin/uname
 }}}
 == FreeBSD/pfSense ==
 
