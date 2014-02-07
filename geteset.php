@@ -169,7 +169,7 @@ function getostype(){
                 }
         return $ospath;
         } else {
-                return 0;
+                return "";
         }
 }
 function tolog($logmsg, $logsign){
