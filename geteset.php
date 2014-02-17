@@ -1,6 +1,7 @@
 #!/usr/local/bin/php
 <?php
-$settings = parse_ini_file("settings.txt");
+$setfile = __DIR__."/settings.txt";
+$settings = parse_ini_file($setfile);
 
 $tempeset = "/var/eset/";
 if (!is_dir($settings['upload_dir'])){
@@ -132,10 +133,9 @@ for($q=0;$q<count($sarray);$q++) {
 	$newsign .= trim($sarray[$q]).",";
 }
 $cv = 'signver="'.$newsign.'"';
-$vfile = 'settings.txt';
-$verfile = file_get_contents($vfile);
+$verfile = file_get_contents($setfile);
 $verfile = preg_replace('/signver=".*"/i', $cv, $verfile);
-file_put_contents($vfile, $verfile);
+file_put_contents($setfile, $verfile);
 
 function getfilefromweb($gf){
 	global $srv, $settings,$curver;
