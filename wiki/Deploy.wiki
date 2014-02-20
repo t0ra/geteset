@@ -2,7 +2,9 @@
 
 = Introduction =
 
-GetEset tested in FreeBSD, pfSense, Debian Linux and working fine.
+Below I present detailed instructions for deploying the GetEset.
+
+Tested in FreeBSD, pfSense, Debian Linux and working fine.
 
 = Installation =
 
