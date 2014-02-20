@@ -75,11 +75,24 @@ ver=
 {{{
 ver="6,7"
 }}}
+
+Edit path to Web-server directory, for sharing ESET antivirus updates:
+{{{
+upload_dir="/var/www/upd"
+}}}
+- in this example all updates we place to http://server_name/upd
+
+Final link for clients with ESET NOD32 Antivirus Version 6 will be:
+http://server_name/upd/v6
+
 Your user and password of ESET-license. For example:
 {{{
 user="EAV-0101020203"
 password="6p4nk37bsh"
 }}}
+
+=== Enable logging ===
+
 By default GetESET logging in file, but you may change it to using MySQL-database. For changing logging to MySQL replace:
 {{{
 log_type="file"
@@ -99,6 +112,7 @@ log_db_table="eset_log"
 - in this example GetESET place logs in table "eset_log". Connectiog to MySQL server by address "localhost" for SQL-user "root" with password "secret". Database name: "stats"
 
 Creating table for log:
+
 {{{
 CREATE TABLE `eset_log` (
   `eset_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -107,4 +121,26 @@ CREATE TABLE `eset_log` (
   `sign` tinyint(4) NOT NULL,
   UNIQUE KEY `eset_id` (`eset_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+}}}
+
+=== Running ===
+
+Place in file */etc/crontab* this line:
+
+{{{
+0 */1 * * * root /root/scripts/geteset/geteset.php
+}}}
+
+=== Using ===
+
+In all clients antivirus arvanced settings change the update-server list to your server link with GetESET. For example:
+
+if client version of antivirus is "6": 
+{{{
+http://server_name/upd/v6
+}}}
+
+if client version of antivirus is "7": 
+{{{
+http://server_name/upd/v7
 }}}
