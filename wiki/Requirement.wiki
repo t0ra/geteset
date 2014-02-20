@@ -1,6 +1,4 @@
 #labels Phase-Requirements
-#Requirements for GetESET
-
 = Introduction =
 
 For all of your clients you can share antivirus updates bases in two ways.
