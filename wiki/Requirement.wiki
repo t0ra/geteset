@@ -13,7 +13,7 @@ For deploying GetESET you need:
 
    * BSD of Linux OS
    * Valid ESET Antivirus license (username and password)
-   * Samba of HTTP-shared directory
+   * Samba or HTTP-shared directory
    * PHP 5 CLI
    * UnRAR (or "unrar-free" for Linux OS)
    * WGET
