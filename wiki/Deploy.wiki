@@ -64,7 +64,6 @@ wget http://geteset.googlecode.com/svn/trunk/geteset.php
 wget http://geteset.googlecode.com/svn/trunk/settings.txt
 wget http://geteset.googlecode.com/svn/trunk/LICENSE
 }}}
-(replace from "wget" to "fetch" if you using OS FreeBSD)
 
 === Configuring ===
 
