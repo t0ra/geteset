@@ -1,11 +1,12 @@
-#summary One-sentence summary of this page.
 #labels Phase-Requirements
+#Requirements for GetESET
 
 = Introduction =
 
 For all of your clients you can share antivirus updates bases in two ways.
 
 1. Through web (link: "*http://......*")
+
 2. Through SAMBA-share (link: "*\\server\updates*")
 
 = Requirement =
