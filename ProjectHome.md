@@ -1,0 +1,1 @@
+It simplifies the creation of mirror updates for ESET products
